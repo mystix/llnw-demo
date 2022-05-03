@@ -1,0 +1,43 @@
+html {
+    font: 1.5em Arial;
+}
+
+div {
+    border: 10px solid red;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+img, iframe, video {
+    display: block;
+    margin: 2em auto;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 20px 20px;
+}
+
+img {
+    border: 4px solid green;
+}
+
+iframe {
+    border: 4px solid blue;
+    height: 480px;
+}
+
+video {
+    border: 4px solid purple;
+}
+
+h3 {
+    margin-top: 3em;
+    text-align: center;
+}
+
+pre {
+    border: 1px solid black;
+    border-radius: 20px 20px;
+    padding: 20px;
+    background-color: lightgrey;
+}

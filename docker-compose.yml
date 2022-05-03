@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  origin:
+    build: org
+    container_name: demo_origin
+    ports:
+      - 80:80
+    volumes:
+      - ./org/conf.d:/etc/nginx/conf.d
+      - ./org/log:/var/log/nginx
+      - ./org/html:/usr/share/nginx/html
+
+  cdn:
+    build: cdn
+    container_name: demo_cdn
+    ports:
+      - 443:443
+    volumes:
+      - ./cdn/conf.d:/etc/nginx/conf.d
+      - ./cdn/log:/var/log/nginx
+      - ./cdn/certs:/etc/nginx/certs
+    # define additional alias "origin.box" (see https://docs.docker.com/compose/networking/#links)
+    links:
+      - 'origin:origin.box'

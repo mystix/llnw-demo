@@ -1,0 +1,7 @@
+{
+    "payload": [
+        "always",
+        "check",
+        "with server before reusing cached data"
+    ]
+}
