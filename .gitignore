@@ -1,5 +1,5 @@
-cdn/log/
-org/html/media/
-org/log/
+cdn/logs/*
+org/logs/*
+org/html/media/*
 *.key
 *.pem
