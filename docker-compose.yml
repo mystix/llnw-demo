@@ -9,7 +9,7 @@ services:
       - ./org/conf/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./org/conf/default.conf:/etc/nginx/conf.d/default.conf:ro
       - ./org/logs:/var/log/nginx
-      - ./org/html:/usr/share/nginx/html:ro
+      - ./org/site:/usr/share/nginx/html:ro
 
   cdn:
     build: cdn
