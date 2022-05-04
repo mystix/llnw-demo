@@ -1,3 +1,5 @@
+cdn/log/
 org/html/media/
+org/log/
 *.key
 *.pem
