@@ -1,5 +1,4 @@
-cdn/logs/*
-org/logs/*
-org/site/media/*
+cdn/logs/*.log
+org/logs/*.log
 *.key
 *.pem
