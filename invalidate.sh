@@ -5,5 +5,5 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-printf "[PURGING $1 ...]\n\n"
+printf "[INVALIDATING $1 ...]\n\n"
 docker exec demo_cdn curl -k -I -H 'Nuke-Cache: true' https://localhost$1
