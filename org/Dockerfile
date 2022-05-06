@@ -4,3 +4,7 @@ FROM nginx:alpine
 RUN apk add --no-cache iproute2
 
 RUN apk add --no-cache ripgrep
+
+# set timezone
+RUN cp /usr/share/zoneinfo/Singapore /etc/localtime
+RUN echo "Singapore" > /etc/timezone
